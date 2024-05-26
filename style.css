@@ -1,0 +1,290 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(173, 173, 173);
+}
+
+.text, .low-text,
+.jump{
+    margin-left: 5px;
+}
+.text2, .text5{
+    margin-right: 5px;
+}
+.container{
+        display: grid;
+        place-items: center;
+        height: inherit;
+}
+.background{
+    background-color: blueviolet;
+
+}
+.phone{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 665px;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.island{
+    height: 30px;
+    background-color: white;
+    width: 60%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+    /* phone header */
+.top-side{
+    width: 100%;
+    height: 80px;
+   background-image: linear-gradient(to right, rgb(117, 11, 117), rgb(202, 39, 202) );
+   border-radius: 20px 20px 5px 5px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+#back{
+    margin-left: 5px;
+}
+.upper-high{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#avatar{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: solid white 1px;
+    margin-right: 5px;
+}
+
+#more{
+    margin-left: 50px;
+}
+.upper-text{
+    width: 50%;
+}
+
+    /* chat boxes */
+.first, .second{
+    /* background-color: grey; */
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.text{
+    width: 80%;
+    background-color: rgb(185, 183, 183);
+    color: blueviolet;
+    padding: 10px;
+    border-radius: 20px 20px 20px 5px;
+}
+
+    /* images */
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#img{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    border-radius: 9px;
+}
+
+.opposite, .random{
+    width: 100%;
+    /* border: solid red 3px; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: right;
+}
+.text2, .text5{
+    background-color: rgb(185, 183, 183);
+    width: 70%;
+    height: inherit;
+    padding: 10px;
+    border-radius: 20px 20px 5px 20px;
+}
+.text5{
+    background-color: rgb(185, 183, 183);
+    width: 54%;
+    height: inherit;
+    padding: 10px;
+    border-radius: 20px 20px 5px 20px;
+}
+
+.low-container{
+    margin-top: 15px;
+}
+.low-text{
+    width: 90%;
+    background-color: rgb(173, 173, 173);
+    padding: 10px;
+    border-radius:  20px 20px 20px 5px;
+    color: blueviolet;
+}
+.jump{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-image: linear-gradient(to right, rgb(117, 11, 117), rgb(202, 39, 202) );
+    height: 40px;
+    align-items: center;
+    border-radius:  10px 10px 10px 5px;
+    color: white;
+    gap: 60px;
+}
+.jump2{
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-image: linear-gradient(to right, rgb(117, 11, 117), rgb(202, 39, 202) );
+    height: 40px;
+    align-items: center;
+    border-radius:  10px 10px 10px 5px;
+    color: white;
+    gap: 70px; 
+}
+
+
+ /* span{
+     margin-right: 60px;
+    margin-left: 30px; 
+}  */
+
+.inner-phone{
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    height: 100%;
+}
+
+.lower{
+    width: 95%;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 6px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+}
+.book{
+    margin-right: 20px;
+}
+.round{
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.punt{
+    text-align: center;
+    font-size: larger;
+}
+
+@media screen and (min-width:800px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .phone{
+        width: 300px;
+        height: 560px;
+    }
+    .punt{
+        width: 400px;
+    }
+    .container{
+        gap: 100px;
+    }
+    .text, .images,
+    .text5, .jump{
+        height: 35px;
+        padding: 0;
+    }
+    .low-text{
+        padding: 5px;
+    }
+    .round{
+        height: 30px;
+        width: 30px;
+    }
+    .text{
+        height: 45px;
+    }
+    .lower{
+        height: 35px;
+        gap: 0;
+        margin-top: 5px;
+    }
+    .book{
+        margin: 0 60px 0 30px;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .text5{
+        width: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .text{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        text-align:left;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    .text2{
+        height: 40px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0;
+        padding-left: 10px;
+        text-align:left;
+    }
+    .opposite{
+        margin-top: 20px;
+    }
+    
+}
+
+
