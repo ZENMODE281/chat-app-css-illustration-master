@@ -22,19 +22,25 @@ body{
 }
 .background{
     background-color: blueviolet;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height:500px;
+    z-index: -1;
+    border-bottom-right-radius: 1000px;
 }
 .phone{
     padding: 10px;
     background-color: rgb(255, 255, 255);
     width: 300px;
-    height: 665px;
+    height: 560px;
     border-radius: 30px;
     margin-top: 20px;
     background-color: rgb(255, 255, 255);
 }
 .island{
-    height: 30px;
+    height: 40px;
     background-color: white;
     width: 60%;
     border-bottom-left-radius: 20px;
@@ -43,7 +49,7 @@ body{
     /* phone header */
 .top-side{
     width: 100%;
-    height: 80px;
+    height: 50px;
    background-image: linear-gradient(to right, rgb(117, 11, 117), rgb(202, 39, 202) );
    border-radius: 20px 20px 5px 5px;
    display: flex;
@@ -94,8 +100,20 @@ body{
     width: 80%;
     background-color: rgb(185, 183, 183);
     color: blueviolet;
-    padding: 10px;
     border-radius: 20px 20px 20px 5px;
+    height: 20px;
+    padding-left: 10px;
+    height: 40px;
+}
+.text7{
+    width: 80%;
+    background-color: rgb(185, 183, 183);
+    color: blueviolet;
+    border-radius: 20px 20px 20px 5px;
+    height: 20px;
+    padding-left: 10px;
+    height: 40px;
+    margin-left: 5px;
 }
 
     /* images */
@@ -123,20 +141,35 @@ body{
     display: flex;
     justify-content: right;
 }
-.text2, .text5{
+.text5{
     background-color: rgb(185, 183, 183);
     width: 70%;
     height: inherit;
-    padding: 10px;
     border-radius: 20px 20px 5px 20px;
+}
+.text2{
+    width: 80%;
+    background-color: rgb(185, 183, 183);
+    text-align: left;
+    padding: 3px;
+    border-radius: 10px 10px 5px 10px;
 }
 .text5{
     background-color: rgb(185, 183, 183);
     width: 54%;
     height: inherit;
-    padding: 10px;
     border-radius: 20px 20px 5px 20px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
 }
+.talk{
+    margin-top: 5px;
+}
+
+/* #back{
+    
+} */
 
 .low-container{
     margin-top: 15px;
@@ -196,7 +229,7 @@ body{
     display: flex;
     align-items: center;
     padding: 10px;
-    gap: 30px;
+    gap: 65px;
 }
 .book{
     margin-right: 20px;
@@ -206,12 +239,44 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .punt{
     text-align: center;
     font-size: larger;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
-
+.long-talk{
+    text-align: center;
+    font-size: larger;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 50%;
+}
+.upper-high, .text, .text7,
+.text2, .text5, .low-text, .lower{
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-size: small;
+}
+.text7, .text{
+    padding-top: 5px;
+}
+.book{
+    opacity: 50%;
+}
+.numbers{
+    font-weight: bold;
+    font-size: larger;
+    font-family: "Rubik", sans-serif;
+}
 @media screen and (min-width:800px){
     .container{
         display: flex;
@@ -243,9 +308,9 @@ body{
         height: 45px;
     }
     .lower{
-        height: 35px;
+        height: 45px;
         gap: 0;
-        margin-top: 5px;
+        margin-top: 25px;
     }
     .book{
         margin: 0 60px 0 30px;
@@ -280,9 +345,21 @@ body{
         margin: 0;
         padding-left: 10px;
         text-align:left;
+        margin-right: 5px;
     }
     .opposite{
         margin-top: 20px;
+    }
+    .background{
+        background-color: blueviolet;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 450px;
+        height:650px;
+        z-index: -1;
+        border-bottom-right-radius: 400px;
+        border-bottom-left-radius: 400px;
     }
     
 }
